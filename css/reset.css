@@ -1,2 +1,39 @@
+/* Reset Universal */
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-*{margin:0;padding:0;box-sizing:border-box}
+/* Mejoras de renderizado y fluidez */
+html {
+  scroll-behavior: smooth; /* Desplazamiento suave al hacer clic en enlaces */
+  -webkit-text-size-adjust: 100%; /* Evita cambios de fuente raros en iPhone */
+}
+
+body {
+  line-height: 1.6; /* Mejora la lectura de tus descripciones */
+  -webkit-font-smoothing: antialiased; /* Fuentes más nítidas */
+  font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  color: #333;
+}
+
+/* Elementos Multimedia */
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%; /* Evita que las imágenes se salgan de su contenedor */
+}
+
+/* Tipografía y Enlaces */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul, ol {
+  list-style: none; /* Quita los puntos de las listas (útil para el menú) */
+}
+
+button, input, select, textarea {
+  font: inherit; /* Hereda la fuente del cuerpo */
+}
