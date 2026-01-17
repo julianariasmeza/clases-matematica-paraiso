@@ -1,111 +1,116 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Tutorías Universitarias | Clases de Matemática Paraíso</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tutorías Universitarias en Cartago | Cálculo, Álgebra y Física</title>
+  
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/servicios.css">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
-<link rel="stylesheet" href="../css/reset.css">
-<link rel="stylesheet" href="../css/main.css">
-<link rel="stylesheet" href="../css/servicios.css">
-
-<meta name="description"
-content="Tutorías universitarias en Matemática, Física y Estadística. Cálculo, Álgebra Lineal, Ecuaciones Diferenciales y más.">
+  <meta name="description" content="Apoyo experto en Cálculo, Álgebra Lineal y Física para estudiantes de UCR, TEC y UNA. Clases presenciales en Paraíso y virtuales por Zoom.">
 </head>
 
 <body>
 
 <header class="header">
-  <div class="header-inner">
+  <div class="header-inner container">
     <div class="brand">
-      <h1>Clases de Matemática Paraíso</h1>
-      <p>Paraíso, Cartago</p>
+      <a href="../index.html" class="logo-link">
+        <h1>Clases de Matemática Paraíso</h1>
+      </a>
+      <p><i class="fa-solid fa-location-dot"></i> Paraíso, Cartago</p>
     </div>
 
-    <nav class="nav">
-      <a href="../index.html">Inicio</a>
-      <a href="admision.html">Admisión</a>
-      <a href="universitarias.html">Universidad</a>
-      <a href="fisica-quimica.html">Física y Química</a>
+    <nav class="nav" aria-label="Menú secundario">
+      <ul>
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="admision.html">Admisión</a></li>
+        <li><a href="universitarias.html" class="active">Universidad</a></li>
+        <li><a href="fisica-quimica.html">Física y Química</a></li>
+      </ul>
     </nav>
   </div>
 </header>
 
-<!-- Breadcrumb -->
-<nav class="breadcrumb">
-  <a href="../index.html">Inicio</a>
-  <span>›</span>
-  <span>Tutorías Universitarias</span>
+<nav class="breadcrumb container" aria-label="Ruta de navegación">
+  <ol>
+    <li><a href="../index.html">Inicio</a></li>
+    <li><span>›</span></li>
+    <li aria-current="page">Tutorías Universitarias</li>
+  </ol>
 </nav>
 
-<section class="service-hero">
-  <h2>Tutorías Universitarias</h2>
-  <p>
-    Acompañamiento académico personalizado para cursos universitarios
-    de matemática, física y áreas afines
-  </p>
-</section>
+<main class="container">
+  <section class="service-hero">
+    <h2>Tutorías Universitarias</h2>
+    <p>Acompañamiento académico de alto nivel para estudiantes de ingeniería y ciencias.</p>
+  </section>
 
-<section class="service-box">
+  <div class="service-grid">
+    <section class="service-content">
+      <div class="info-card">
+        <h3><i class="fa-solid fa-user-graduate"></i> ¿A quién están dirigidas?</h3>
+        <p>Estudiantes de la <strong>UCR, TEC, UNA</strong> y universidades privadas que buscan dominar conceptos complejos y asegurar la aprobación de sus cursos.</p>
+      </div>
 
-  <h3>¿A quién están dirigidas?</h3>
-  <p>
-    Estudiantes universitarios que requieren refuerzo, explicación clara
-    y acompañamiento en cursos de matemática, física o estadística,
-    tanto para exámenes como para trabajos y tareas.
-  </p>
+      <div class="info-card">
+        <h3><i class="fa-solid fa-list-check"></i> Cursos que se atienden</h3>
+        <ul class="subjects-list">
+          <li><i class="fa-solid fa-check"></i> Matemática General</li>
+          <li><i class="fa-solid fa-check"></i> Cálculo (I, II y III)</li>
+          <li><i class="fa-solid fa-check"></i> Álgebra Lineal</li>
+          <li><i class="fa-solid fa-check"></i> Ecuaciones Diferenciales</li>
+          <li><i class="fa-solid fa-check"></i> Probabilidad y Estadística</li>
+          <li><i class="fa-solid fa-check"></i> Física General (I, II y III)</li>
+        </ul>
+      </div>
+    </section>
 
-  <h3>Cursos que se atienden</h3>
-  <ul>
-    <li>Matemática General</li>
-    <li>Cálculo Diferencial e Integral (Cálculo I, II y III)</li>
-    <li>Álgebra Lineal</li>
-    <li>Ecuaciones Diferenciales</li>
-    <li>Probabilidad y Estadística</li>
-    <li>Física General (I, II y III)</li>
-  </ul>
+    <aside class="service-details">
+      <div class="details-box">
+        <h3>Detalles del Servicio</h3>
+        <ul>
+          <li><strong><i class="fa-solid fa-laptop-code"></i> Modalidad:</strong> Virtual o Presencial</li>
+          <li><strong><i class="fa-solid fa-clock"></i> Sesiones:</strong> 60 a 90 min</li>
+          <li><strong><i class="fa-solid fa-calendar-day"></i> Horario:</strong> A convenir</li>
+        </ul>
+        <a href="https://wa.me/50670769371" target="_blank" class="cta-btn pulse">
+          <i class="fa-brands fa-whatsapp"></i> Consultar Disponibilidad
+        </a>
+      </div>
+    </aside>
+  </div>
 
-  <h3>Modalidad</h3>
-  <p>
-    ✔ Clases <strong>individuales</strong><br>
-    ✔ Modalidad <strong>virtual (Zoom)</strong> o presencial en
-    <strong>Paraíso, Cartago</strong>
-  </p>
-
-  <h3>Metodología de trabajo</h3>
-  <p>
-    ✔ Explicación paso a paso<br>
-    ✔ Resolución guiada de ejercicios<br>
-    ✔ Enfoque en comprensión conceptual<br>
-    ✔ Preparación específica para exámenes
-  </p>
-
-  <h3>Duración de las sesiones</h3>
-  <p>
-    ✔ Sesiones de <strong>1 hora</strong> o
-    <strong>1 hora y 30 minutos</strong><br>
-    ✔ Horarios flexibles según disponibilidad
-  </p>
-
-</section>
-
-<section class="cta-service">
-  <a href="https://wa.me/50670769371" target="_blank" class="cta-btn">
-    💬 Consultar por WhatsApp
-  </a>
-</section>
+  <section class="methodology">
+    <h3>Nuestra Metodología</h3>
+    <div class="method-cards">
+      <div class="m-card">
+        <i class="fa-solid fa-brain"></i>
+        <h4>Conceptos Claros</h4>
+        <p>No solo resolvemos ejercicios, te enseñamos el porqué de cada paso.</p>
+      </div>
+      <div class="m-card">
+        <i class="fa-solid fa-pen-ruler"></i>
+        <h4>Práctica Guiada</h4>
+        <p>Resolución de exámenes anteriores y prácticas específicas de tu cátedra.</p>
+      </div>
+    </div>
+  </section>
+</main>
 
 <footer class="footer">
-  <p>📍 Paraíso, Cartago</p>
-  <p>📞 WhatsApp: 7076-9371</p>
+  <div class="container">
+    <p><i class="fa-solid fa-location-dot"></i> Paraíso, Cartago, Costa Rica</p>
+    <p><i class="fa-brands fa-whatsapp"></i> <a href="tel:+50670769371">7076-9371</a></p>
+  </div>
 </footer>
 
-<!-- WhatsApp flotante -->
-<a href="https://wa.me/50670769371"
-   class="whatsapp-float"
-   target="_blank"
-   aria-label="WhatsApp">
-  💬
+<a href="https://wa.me/50670769371" class="whatsapp-float" target="_blank" aria-label="Contactar por WhatsApp">
+  <i class="fa-brands fa-whatsapp"></i>
 </a>
 
 </body>
