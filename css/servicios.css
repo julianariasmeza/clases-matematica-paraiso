@@ -115,4 +115,22 @@
   transform: scale(1.05);
   box-shadow: 0 6px 20px rgba(37, 211, 102, 0.4);
 }
+.payment-info {
+  font-size: 0.9rem;
+  color: #666;
+  text-align: center;
+  margin-bottom: 15px;
+  font-style: italic;
+}
+
+.details-list li {
+  margin-bottom: 12px;
+  display: flex;
+  justify-content: space-between; /* Alinea los iconos a la izquierda y el dato a la derecha */
+}
+
+.details-list i {
+  color: #1e3c72;
+  margin-right: 10px;
+}
 
