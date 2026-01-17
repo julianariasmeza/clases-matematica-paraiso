@@ -1,83 +1,118 @@
-.service-hero{
-  padding:40px 20px;
-  background:linear-gradient(135deg,#1e3c72,#2a5298);
-  color:white;
-  text-align:center;
+/* --- Hero del Servicio --- */
+.service-hero {
+  padding: 60px 20px;
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  color: white;
+  text-align: center;
+  border-bottom: 5px solid #25D366; /* Detalle de color para coherencia */
 }
 
-.service-hero h2{
-  font-size:32px;
-  margin-bottom:10px;
+.service-hero h2 {
+  font-size: clamp(28px, 5vw, 38px);
+  margin-bottom: 15px;
+  letter-spacing: -0.5px;
 }
 
-.service-hero p{
-  font-size:16px;
+.service-hero p {
+  font-size: 1.1rem;
+  max-width: 700px;
+  margin: 0 auto;
+  opacity: 0.9;
 }
 
-.service-box{
-  max-width:800px;
-  margin:40px auto;
-  padding:20px;
+/* --- Breadcrumb (Migas de Pan) --- */
+.breadcrumb {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 0 20px;
+  font-size: 14px;
 }
 
-.service-box h3{
-  margin-top:25px;
-  margin-bottom:10px;
-  color:#1e3c72;
+.breadcrumb a {
+  color: #2a5298;
+  font-weight: 500;
+  transition: color 0.3s;
 }
 
-.service-box p,
-.service-box ul{
-  font-size:15px;
-  line-height:1.6;
+.breadcrumb a:hover { color: #25D366; }
+
+/* --- Contenedor Principal de Información --- */
+.service-box {
+  max-width: 900px;
+  margin: 20px auto 60px;
+  padding: 0 20px;
+  display: grid;
+  gap: 30px;
 }
 
-.service-box ul{
-  padding-left:20px;
+/* Estilo para cada bloque de información */
+.info-card {
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  border-left: 4px solid #1e3c72;
 }
 
-.price{
-  font-size:24px;
-  font-weight:bold;
-  color:#1e3c72;
+.service-box h3 {
+  margin-bottom: 15px;
+  color: #1e3c72;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1.4rem;
 }
 
-.cta-service{
-  text-align:center;
-  padding:30px;
+/* --- Lista de Materias (Mejorada) --- */
+.service-box ul {
+  list-style: none;
+  padding-left: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); /* Dos columnas */
+  gap: 10px;
 }
 
-.cta-btn{
-  background:#25D366;
-  color:white;
-  padding:14px 30px;
-  border-radius:40px;
-  text-decoration:none;
-  font-weight:bold;
+.service-box ul li {
+  background: #f8f9fa;
+  padding: 10px 15px;
+  border-radius: 8px;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
 }
 
-.cta-btn:hover{
-  background:#1ebe5d;
-}
-.breadcrumb{
-  max-width:900px;
-  margin:15px auto 0;
-  padding:0 20px;
-  font-size:13px;
-  color:#555;
+.service-box ul li::before {
+  content: "✔";
+  color: #25D366;
+  font-weight: bold;
+  margin-right: 10px;
 }
 
-.breadcrumb a{
-  color:#1e3c72;
-  text-decoration:none;
-  font-weight:600;
+/* --- Botón de Acción (CTA) --- */
+.cta-service {
+  text-align: center;
+  padding: 40px 20px;
+  background: #f0f4f8;
+  margin-top: 40px;
 }
 
-.breadcrumb a:hover{
-  text-decoration:underline;
+.cta-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: #25D366;
+  color: white;
+  padding: 18px 35px;
+  border-radius: 50px;
+  font-size: 18px;
+  font-weight: 800;
+  transition: transform 0.3s, box-shadow 0.3s;
+  box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3);
 }
 
-.breadcrumb span{
-  margin:0 5px;
+.cta-btn:hover {
+  background: #1ebe5d;
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(37, 211, 102, 0.4);
 }
 
