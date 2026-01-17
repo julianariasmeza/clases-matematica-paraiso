@@ -1,0 +1,61 @@
+.service-hero{
+  padding:40px 20px;
+  background:linear-gradient(135deg,#1e3c72,#2a5298);
+  color:white;
+  text-align:center;
+}
+
+.service-hero h2{
+  font-size:32px;
+  margin-bottom:10px;
+}
+
+.service-hero p{
+  font-size:16px;
+}
+
+.service-box{
+  max-width:800px;
+  margin:40px auto;
+  padding:20px;
+}
+
+.service-box h3{
+  margin-top:25px;
+  margin-bottom:10px;
+  color:#1e3c72;
+}
+
+.service-box p,
+.service-box ul{
+  font-size:15px;
+  line-height:1.6;
+}
+
+.service-box ul{
+  padding-left:20px;
+}
+
+.price{
+  font-size:24px;
+  font-weight:bold;
+  color:#1e3c72;
+}
+
+.cta-service{
+  text-align:center;
+  padding:30px;
+}
+
+.cta-btn{
+  background:#25D366;
+  color:white;
+  padding:14px 30px;
+  border-radius:40px;
+  text-decoration:none;
+  font-weight:bold;
+}
+
+.cta-btn:hover{
+  background:#1ebe5d;
+}
