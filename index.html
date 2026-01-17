@@ -1,100 +1,121 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Clases de Matemática Paraíso</title>
-
-<link rel="stylesheet" href="css/reset.css">
-<link rel="stylesheet" href="css/main.css">
-<link rel="stylesheet" href="css/home.css">
-
-<meta name="description" content="Clases de Matemática en Paraíso de Cartago. Tutorías universitarias, curso de admisión UCR TEC UNA, Física y Química. Modalidad virtual y presencial.">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Clases de Matemática en Paraíso de Cartago. Tutorías universitarias, curso de admisión UCR TEC UNA, Física y Química. Modalidad virtual y presencial.">
+  <meta name="keywords" content="clases matemática, tutorías universidad, admisión UCR, admisión TEC, física, química, Paraíso Cartago">
+  <title>Clases de Matemática Paraíso | Tutorías y Curso de Admisión</title>
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/home.css">
 </head>
-<a href="https://wa.me/50670769371"
-   class="whatsapp-float"
-   target="_blank"
-   aria-label="WhatsApp">
-  💬
-</a>
-
 <body>
 
+  <!-- WhatsApp Float Button -->
+  <a href="https://wa.me/50670769371" 
+     class="whatsapp-float" 
+     target="_blank" 
+     rel="noopener noreferrer"
+     aria-label="Contactar por WhatsApp">
+    <span aria-hidden="true">💬</span>
+  </a>
+
+  <!-- Header -->
   <header class="header">
     <div class="header-inner">
       <div class="brand">
         <h1>Clases de Matemática Paraíso</h1>
-        <p>Paraíso, Cartago</p>
+        <p class="brand-location">Paraíso, Cartago</p>
       </div>
   
-      <nav class="nav">
-        <a href="index.html">Inicio</a>
+      <nav class="nav" aria-label="Navegación principal">
+        <a href="index.html" aria-current="page">Inicio</a>
         <a href="pages/admision.html">Admisión</a>
         <a href="pages/universitarias.html">Universidad</a>
         <a href="pages/fisica-quimica.html">Física y Química</a>
       </nav>
     </div>
   </header>
-  
 
-<section class="hero">
-  <h2>Apoyo académico personalizado</h2>
-  <p>
-    Matemática • Física • Química •
-    Preparación para exámenes de admisión
-  </p>
+  <!-- Main Content -->
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <h2>Apoyo académico personalizado</h2>
+      <p class="hero-description">
+        Matemática • Física • Química • Preparación para exámenes de admisión
+      </p>
+      <a href="https://wa.me/50670769371" 
+         class="hero-btn" 
+         target="_blank"
+         rel="noopener noreferrer">
+        <span aria-hidden="true">💬</span> Consultar por WhatsApp
+      </a>
+    </section>
 
-  <a href="https://wa.me/50670769371" class="hero-btn" target="_blank">
-    💬 Consultar por WhatsApp
-  </a>
-</section>
+    <!-- Services Section -->
+    <section class="services">
+      <h2 class="sr-only">Nuestros Servicios</h2>
+      
+      <article class="card">
+        <a href="pages/admision.html" class="card-link">
+          <span class="card-icon" aria-hidden="true">🎓</span>
+          <h3>Curso de Admisión</h3>
+          <p class="card-description">UCR • TEC • UNA</p>
+        </a>
+      </article>
 
-<section class="services">
-  <a href="pages/admision.html" class="card">
-    🎓
-    <h3>Curso de Admisión</h3>
-    <p>UCR • TEC • UNA</p>
-  </a>
+      <article class="card">
+        <a href="pages/universitarias.html" class="card-link">
+          <span class="card-icon" aria-hidden="true">📘</span>
+          <h3>Tutorías Universitarias</h3>
+          <p class="card-description">Cálculo, Álgebra, Ecuaciones, Probabilidad</p>
+        </a>
+      </article>
 
-  <a href="pages/universitarias.html" class="card">
-    📘
-    <h3>Tutorías Universitarias</h3>
-    <p>Cálculo, Álgebra, Ecuaciones, Probabilidad</p>
-  </a>
+      <article class="card">
+        <a href="pages/fisica-quimica.html" class="card-link">
+          <span class="card-icon" aria-hidden="true">⚛️</span>
+          <h3>Física y Química</h3>
+          <p class="card-description">Secundaria y universidad</p>
+        </a>
+      </article>
+    </section>
 
-  <a href="pages/fisica-quimica.html" class="card">
-    ⚛️
-    <h3>Física y Química</h3>
-    <p>Secundaria y universidad</p>
-  </a>
-</section>
+    <!-- Social Media Section -->
+    <section class="social">
+      <h3>Seguinos en redes sociales</h3>
+      <div class="social-links">
+        <a href="https://www.instagram.com/clasesdematematicaparaiso?igsh=bDNrNWJwc29hZ3Jy&utm_source=qr" 
+           target="_blank" 
+           rel="noopener noreferrer"
+           class="social-btn instagram">
+          <span aria-hidden="true">📸</span> Instagram
+        </a>
+        <a href="https://www.facebook.com/share/1E2ZP8LJWi/?mibextid=wwXIfr" 
+           target="_blank" 
+           rel="noopener noreferrer"
+           class="social-btn facebook">
+          <span aria-hidden="true">📘</span> Facebook
+        </a>
+      </div>
+    </section>
+  </main>
 
-<section class="social">
-  <h3>Seguinos en redes sociales</h3>
+  <!-- Footer -->
+  <footer class="footer">
+    <address>
+      <p><span aria-hidden="true">📍</span> Paraíso, Cartago</p>
+      <p><span aria-hidden="true">📞</span> WhatsApp: <a href="tel:+50670769371">7076-9371</a></p>
+    </address>
+    <p class="footer-copy">&copy; 2025 Clases de Matemática Paraíso</p>
+  </footer>
 
-  <div class="social-links">
-    <a href="https://www.instagram.com/clasesdematematicaparaiso?igsh=bDNrNWJwc29hZ3Jy&utm_source=qr"
-       target="_blank" class="social-btn instagram">
-       📸 Instagram
-    </a>
-
-    <a href="https://www.facebook.com/share/1E2ZP8LJWi/?mibextid=wwXIfr"
-       target="_blank" class="social-btn facebook">
-       📘 Facebook
-    </a>
-  </div>
-</section>
-
-<footer class="footer">
-  <p>📍 Paraíso, Cartago</p>
-  <p>📞 WhatsApp: 7076-9371</p>
-</footer>
-
-<a href="https://wa.me/50670769371" class="whatsapp" target="_blank">
-  💬
-</a>
-
-<script src="js/whatsapp.js"></script>
+  <!-- Scripts -->
+  <script src="js/whatsapp.js"></script>
 </body>
 </html>
 
