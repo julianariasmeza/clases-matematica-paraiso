@@ -1,128 +1,93 @@
-
-body{
+/* 1. Estilos Globales */
+body {
   font-family: Arial, sans-serif;
-  background:#f5f7fb;
-  color:#222;
-}
-.header{
-  padding:20px;
-  background:#1e3c72;
-  color:white;
-  text-align:center;
-}
-.hero{
-  padding:30px;
-  text-align:center;
-}
-.services{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-  gap:20px;
-  padding:20px;
-}
-.card{
-  background:white;
-  padding:20px;
-  border-radius:12px;
-  text-align:center;
-  text-decoration:none;
-  color:#1e3c72;
-  font-weight:bold;
-  box-shadow:0 10px 20px rgba(0,0,0,.1);
-}
-.whatsapp{
-  position:fixed;
-  bottom:20px;
-  right:20px;
-  background:#25D366;
-  color:white;
-  padding:12px 18px;
-  border-radius:50px;
-  text-decoration:none;
-  font-weight:bold;
-}
-.header{
-  background:#1e3c72;
-  color:white;
-  padding:15px 20px;
+  background: #f5f7fb;
+  color: #222;
+  line-height: 1.6;
 }
 
-.header-inner{
-  max-width:1100px;
-  margin:auto;
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  flex-wrap:wrap;
+/* 2. Header y Navegación */
+.header {
+  background: #1e3c72;
+  color: white;
+  padding: 15px 20px;
 }
 
-.brand h1{
-  font-size:20px;
-  margin-bottom:4px;
+.header-inner {
+  max-width: 1100px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
-.brand p{
-  font-size:13px;
-  opacity:.9;
+.brand h1 {
+  font-size: 20px;
+  margin-bottom: 4px;
 }
 
-.nav{
-  display:flex;
-  gap:15px;
+.brand p {
+  font-size: 13px;
+  opacity: .9;
 }
 
-.nav a{
-  color:white;
-  text-decoration:none;
-  font-weight:600;
-  font-size:14px;
+.nav {
+  display: flex;
+  gap: 15px;
 }
 
-.nav a:hover{
-  text-decoration:underline;
+.nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+  transition: 0.3s;
 }
 
-@media(max-width:768px){
-  .header-inner{
-    flex-direction:column;
-    gap:10px;
-    text-align:center;
-  }
-}
-.whatsapp-float{
-  position:fixed;
-  bottom:20px;
-  right:20px;
-  width:56px;
-  height:56px;
-  background:#25D366;
-  color:white;
-  border-radius:50%;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  font-size:26px;
-  text-decoration:none;
-  box-shadow:0 8px 20px rgba(0,0,0,.3);
-  z-index:999;
-  animation:pulse 1.8s infinite;
+.nav a:hover {
+  text-decoration: underline;
+  opacity: 0.8;
 }
 
-.whatsapp-float:hover{
-  background:#1ebe5d;
+/* 3. Secciones Principales */
+.hero {
+  padding: 40px 20px;
+  text-align: center;
 }
 
-@keyframes pulse{
-  0%{box-shadow:0 0 0 0 rgba(37,211,102,.7)}
-  70%{box-shadow:0 0 0 15px rgba(37,211,102,0)}
-  100%{box-shadow:0 0 0 0 rgba(37,211,102,0)}
+.services {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  max-width: 1100px;
+  margin: auto;
 }
-/* --- Corrección de Botones de Redes Sociales --- */
+
+.card {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  text-align: center;
+  text-decoration: none;
+  color: #1e3c72;
+  font-weight: bold;
+  box-shadow: 0 10px 20px rgba(0,0,0,.05);
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* 4. Redes Sociales (Solución a iconos invisibles) */
 .social-links {
     display: flex;
     justify-content: center;
     gap: 20px;
     padding: 20px;
+    flex-wrap: wrap;
 }
 
 .social-btn {
@@ -130,15 +95,19 @@ body{
     align-items: center;
     gap: 10px;
     padding: 14px 28px;
-    border-radius: 18px; /* Redondeado similar a tu captura */
+    border-radius: 18px;
     text-decoration: none;
     font-weight: bold;
-    color: white !important; /* Texto blanco obligatorio */
+    color: white !important; /* Fuerza el texto e icono a blanco */
     transition: all 0.3s ease;
     box-shadow: 0 4px 15px rgba(0,0,0,0.1);
 }
 
-/* Colores de marca para que el icono blanco sea visible */
+.social-btn i {
+    font-size: 1.2rem;
+    color: white; /* Asegura que el icono sea blanco */
+}
+
 .social-btn.instagram {
     background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
 }
@@ -153,8 +122,47 @@ body{
     box-shadow: 0 6px 20px rgba(0,0,0,0.2);
 }
 
-/* Tamaño de los iconos dentro del botón */
-.social-btn i {
-    font-size: 1.2rem;
+/* 5. WhatsApp Flotante */
+.whatsapp-float {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  width: 60px;
+  height: 60px;
+  background: #25D366;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  text-decoration: none;
+  box-shadow: 0 8px 20px rgba(0,0,0,.3);
+  z-index: 999;
+  animation: pulse 1.8s infinite;
+}
+
+.whatsapp-float:hover {
+  background: #1ebe5d;
+  color: white;
+}
+
+/* 6. Animaciones y Media Queries */
+@keyframes pulse {
+  0% { box-shadow: 0 0 0 0 rgba(37,211,102,.7); }
+  70% { box-shadow: 0 0 0 15px rgba(37,211,102,0); }
+  100% { box-shadow: 0 0 0 0 rgba(37,211,102,0); }
+}
+
+@media (max-width: 768px) {
+  .header-inner {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+  .nav {
+    justify-content: center;
+    width: 100%;
+  }
 }
 
