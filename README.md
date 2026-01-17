@@ -1,3 +1,12 @@
+# Clases de Matemática Paraíso
 
-Clases de Matemática Paraíso
-Sitio web estático (HTML, CSS, JS)
+Sitio web estático para servicios de tutorías en Matemática, Física y Química.
+
+Tecnologías:
+- HTML
+- CSS
+- JavaScript
+
+Ubicación: Paraíso, Cartago
+Contacto: WhatsApp 7076-9371
+
