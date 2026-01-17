@@ -165,4 +165,44 @@ body {
     width: 100%;
   }
 }
+/* Esconder el checkbox y el icono en computadoras */
+.menu-check, .menu-label {
+  display: none;
+}
+
+/* Estilos para el menú en móviles (debajo de 768px) */
+@media (max-width: 768px) {
+  .menu-label {
+    display: block; /* Aparece el icono */
+    cursor: pointer;
+    font-size: 24px;
+    color: white;
+  }
+
+  .nav {
+    display: none; /* Escondemos el menú por defecto */
+    width: 100%;
+    background: #152c55; /* Un tono más oscuro que el header */
+    position: absolute;
+    top: 100%; /* Justo debajo del header */
+    left: 0;
+    padding: 20px 0;
+    z-index: 1000;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  /* El "Truco": Si el checkbox está marcado, mostramos el nav */
+  .menu-check:checked ~ .nav {
+    display: block;
+  }
+
+  .header-inner {
+    position: relative; /* Necesario para posicionar el nav absoluto */
+  }
+}
 
