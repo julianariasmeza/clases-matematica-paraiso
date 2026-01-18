@@ -4,11 +4,12 @@
    ========================================================= */
 
 /* =========================
-   1. ESTILOS GLOBALES
+   1. VARIABLES GLOBALES
    ========================= */
 :root {
   --primary: #1e3c72;
   --primary-dark: #152c55;
+  --primary-light: #2a5298;
   --bg-light: #f5f7fb;
   --text-dark: #222;
   --text-muted: #555;
@@ -17,6 +18,9 @@
   --transition: all 0.3s ease;
 }
 
+/* =========================
+   2. RESET BÁSICO
+   ========================= */
 * {
   box-sizing: border-box;
 }
@@ -30,7 +34,7 @@ body {
 }
 
 /* =========================
-   2. CONTENEDOR GENERAL
+   3. CONTENEDOR GENERAL
    ========================= */
 .container {
   max-width: 1200px;
@@ -39,12 +43,12 @@ body {
 }
 
 /* Separación vertical global entre secciones */
-section {
+main > section {
   margin-bottom: 80px;
 }
 
 /* =========================
-   3. HEADER Y NAVEGACIÓN
+   4. HEADER Y NAVEGACIÓN
    ========================= */
 .header {
   background: var(--primary);
@@ -95,7 +99,7 @@ section {
 }
 
 /* =========================
-   4. MENÚ HAMBURGUESA (MÓVIL)
+   5. MENÚ HAMBURGUESA (MÓVIL)
    ========================= */
 .menu-check {
   display: none;
@@ -109,7 +113,33 @@ section {
 }
 
 /* =========================
-   5. FOOTER
+   6. HERO CURVO GLOBAL
+   ========================= */
+.hero-curvo {
+  background: linear-gradient(135deg, var(--primary), var(--primary-light));
+  color: var(--white);
+  padding: 90px 20px 100px;
+  text-align: center;
+  border-bottom-left-radius: 60px;
+  border-bottom-right-radius: 60px;
+}
+
+.hero-curvo h2 {
+  font-size: clamp(32px, 5vw, 44px);
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.hero-curvo p {
+  font-size: 1.15rem;
+  max-width: 720px;
+  margin: 0 auto;
+  opacity: 0.9;
+  line-height: 1.6;
+}
+
+/* =========================
+   7. FOOTER
    ========================= */
 .footer {
   background: var(--primary-dark);
@@ -133,7 +163,7 @@ section {
 }
 
 /* =========================
-   6. WHATSAPP FLOTANTE
+   8. WHATSAPP FLOTANTE
    ========================= */
 .whatsapp-float {
   position: fixed;
@@ -161,7 +191,7 @@ section {
 }
 
 /* =========================
-   7. ACCESIBILIDAD
+   9. ACCESIBILIDAD
    ========================= */
 .sr-only {
   position: absolute;
@@ -175,7 +205,7 @@ section {
 }
 
 /* =========================
-   8. MEDIA QUERIES
+   10. MEDIA QUERIES
    ========================= */
 @media (max-width: 768px) {
 
@@ -204,6 +234,10 @@ section {
 
   .menu-check:checked ~ .nav {
     max-height: 400px;
+  }
+
+  .hero-curvo {
+    padding: 70px 20px 80px;
   }
 }
 
