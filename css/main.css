@@ -117,10 +117,11 @@ main > section {
 .hero-curvo {
   background: linear-gradient(135deg, var(--primary), var(--primary-light));
   color: var(--white);
-  padding: 90px 20px 100px;
+  padding: 90px 20px 120px;
   text-align: center;
-  border-bottom-left-radius: 60px;
-  border-bottom-right-radius: 60px;
+
+  /* Curva cóncava hacia abajo y suave */
+  clip-path: ellipse(140% 100% at 50% 100%);
 }
 
 .hero-curvo h2 {
@@ -404,11 +405,14 @@ main > section {
   .hero,
   .hero-curvo,
   .service-hero {
-    padding: 70px 20px 80px;
+    padding: 70px 20px 110px;
+    clip-path: ellipse(160% 95% at 50% 100%);
   }
 
   /* ===== Grids ===== */
   .service-grid {
     grid-template-columns: 1fr;
+    gap: 40px;
   }
+
 }
