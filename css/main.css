@@ -1,28 +1,65 @@
-/* 1. ESTILOS GLOBALES */
+/* =========================================================
+   MAIN.CSS — ESTILOS GLOBALES DEL SITIO
+   Base estructural (NO estilos específicos de páginas)
+   ========================================================= */
+
+/* =========================
+   1. ESTILOS GLOBALES
+   ========================= */
+:root {
+  --primary: #1e3c72;
+  --primary-dark: #152c55;
+  --bg-light: #f5f7fb;
+  --text-dark: #222;
+  --text-muted: #555;
+  --white: #ffffff;
+  --shadow-soft: 0 6px 18px rgba(0,0,0,0.08);
+  --transition: all 0.3s ease;
+}
+
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: Arial, sans-serif;
-  background: #f5f7fb;
-  color: #222;
-  line-height: 1.6;
+  background: var(--bg-light);
+  color: var(--text-dark);
+  line-height: 1.7;
   margin: 0;
 }
 
-/* 2. HEADER Y NAVEGACIÓN */
+/* =========================
+   2. CONTENEDOR GENERAL
+   ========================= */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Separación vertical global entre secciones */
+section {
+  margin-bottom: 80px;
+}
+
+/* =========================
+   3. HEADER Y NAVEGACIÓN
+   ========================= */
 .header {
-  background: #1e3c72;
-  color: white;
-  padding: 15px 20px;
-  position: relative; /* Importante para el menú absoluto en móvil */
+  background: var(--primary);
+  color: var(--white);
+  position: relative;
 }
 
 .header-inner {
-  max-width: 1100px;
-  margin: auto;
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
+  padding: 15px 0;
 }
 
+/* Marca */
 .brand h1 {
   font-size: 20px;
   margin: 0;
@@ -30,103 +67,74 @@ body {
 
 .brand p {
   font-size: 13px;
-  opacity: .9;
   margin: 4px 0 0;
+  opacity: 0.9;
 }
 
-/* Navegación en Desktop */
+/* Navegación desktop */
 .nav-list {
-  display: flex;
-  gap: 15px;
   list-style: none;
+  display: flex;
+  gap: 18px;
   margin: 0;
   padding: 0;
 }
 
 .nav-list a {
-  color: white;
+  color: var(--white);
   text-decoration: none;
   font-weight: 600;
   font-size: 14px;
-  transition: 0.3s;
+  transition: var(--transition);
 }
 
-.nav-list a:hover {
+.nav-list a:hover,
+.nav-list a.active {
   text-decoration: underline;
-  opacity: 0.8;
+  opacity: 0.85;
 }
 
-/* Esconder checkbox e icono en PC */
-.menu-check, .menu-label {
+/* =========================
+   4. MENÚ HAMBURGUESA (MÓVIL)
+   ========================= */
+.menu-check {
   display: none;
 }
 
-/* 3. SECCIONES PRINCIPALES */
-.hero {
-  padding: 60px 20px;
+.menu-label {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: var(--white);
+}
+
+/* =========================
+   5. FOOTER
+   ========================= */
+.footer {
+  background: var(--primary-dark);
+  color: var(--white);
+  padding: 30px 0;
   text-align: center;
 }
 
-.services {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 20px;
-  padding: 20px;
-  max-width: 1100px;
-  margin: auto;
+.footer p {
+  margin: 6px 0;
+  font-size: 14px;
 }
 
-.card {
-  background: white;
-  padding: 25px;
-  border-radius: 12px;
-  text-align: center;
+.footer a {
+  color: var(--white);
   text-decoration: none;
-  color: #1e3c72;
-  font-weight: bold;
-  box-shadow: 0 10px 20px rgba(0,0,0,.05);
-  transition: transform 0.3s;
 }
 
-.card:hover {
-  transform: translateY(-5px);
+.footer a:hover {
+  text-decoration: underline;
 }
 
-/* 4. REDES SOCIALES */
-.social-links {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    padding: 40px 20px;
-    flex-wrap: wrap;
-}
-
-.social-btn {
-    display: inline-flex;
-    align-items: center;
-    gap: 10px;
-    padding: 14px 28px;
-    border-radius: 18px;
-    text-decoration: none;
-    font-weight: bold;
-    color: white !important;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-}
-
-.social-btn i {
-    font-size: 1.2rem;
-}
-
-.social-btn.instagram {
-    background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
-}
-
-.social-btn.facebook {
-    background-color: #1877F2;
-}
-
-/* 5. WHATSAPP FLOTANTE */
+/* =========================
+   6. WHATSAPP FLOTANTE
+   ========================= */
 .whatsapp-float {
   position: fixed;
   bottom: 25px;
@@ -141,7 +149,7 @@ body {
   justify-content: center;
   font-size: 30px;
   text-decoration: none;
-  box-shadow: 0 8px 20px rgba(0,0,0,.3);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
   z-index: 999;
   animation: pulse 1.8s infinite;
 }
@@ -152,43 +160,50 @@ body {
   100% { box-shadow: 0 0 0 0 rgba(37,211,102,0); }
 }
 
-/* 6. MEDIA QUERIES (MÓVIL) */
+/* =========================
+   7. ACCESIBILIDAD
+   ========================= */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+/* =========================
+   8. MEDIA QUERIES
+   ========================= */
 @media (max-width: 768px) {
+
   .menu-label {
     display: block;
-    cursor: pointer;
-    font-size: 24px;
-    color: white;
   }
 
-  /* Menú Hamburguesa animado */
   .nav {
-    display: block;
-    max-height: 0; /* Cerrado por defecto */
-    overflow: hidden;
-    transition: max-height 0.4s ease-in-out;
-    background: #152c55;
-    width: 100%;
     position: absolute;
     top: 100%;
     left: 0;
+    width: 100%;
+    background: var(--primary-dark);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
     z-index: 1000;
   }
 
   .nav-list {
     flex-direction: column;
-    padding: 20px;
-    gap: 20px;
     text-align: center;
+    padding: 20px 0;
+    gap: 20px;
   }
 
-  /* Mostrar menú al hacer clic */
   .menu-check:checked ~ .nav {
-    max-height: 400px; /* Suficiente para mostrar los links */
-  }
-
-  .header-inner {
-    flex-direction: row; /* Mantiene logo a la izquierda e icono a la derecha */
+    max-height: 400px;
   }
 }
 
