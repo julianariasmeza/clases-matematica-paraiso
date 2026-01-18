@@ -1,6 +1,6 @@
 /* =========================================================
    MAIN.CSS — ESTILOS GLOBALES DEL SITIO
-   Base estructural (NO estilos específicos de páginas)
+   (Archivo único unificado)
    ========================================================= */
 
 /* =========================
@@ -8,12 +8,14 @@
    ========================= */
 :root {
   --primary: #1e3c72;
-  --primary-dark: #152c55;
   --primary-light: #2a5298;
+  --primary-dark: #152c55;
   --bg-light: #f5f7fb;
   --text-dark: #222;
   --text-muted: #555;
   --white: #ffffff;
+  --whatsapp: #25D366;
+  --whatsapp-dark: #1ebe5d;
   --shadow-soft: 0 6px 18px rgba(0,0,0,0.08);
   --transition: all 0.3s ease;
 }
@@ -42,7 +44,6 @@ body {
   padding: 0 20px;
 }
 
-/* Separación vertical global entre secciones */
 main > section {
   margin-bottom: 80px;
 }
@@ -63,7 +64,6 @@ main > section {
   padding: 15px 0;
 }
 
-/* Marca */
 .brand h1 {
   font-size: 20px;
   margin: 0;
@@ -75,7 +75,6 @@ main > section {
   opacity: 0.9;
 }
 
-/* Navegación desktop */
 .nav-list {
   list-style: none;
   display: flex;
@@ -99,7 +98,7 @@ main > section {
 }
 
 /* =========================
-   5. MENÚ HAMBURGUESA (MÓVIL)
+   5. MENÚ MÓVIL
    ========================= */
 .menu-check {
   display: none;
@@ -113,7 +112,7 @@ main > section {
 }
 
 /* =========================
-   6. HERO CURVO GLOBAL
+   6. HERO CURVO (GLOBAL)
    ========================= */
 .hero-curvo {
   background: linear-gradient(135deg, var(--primary), var(--primary-light));
@@ -139,7 +138,155 @@ main > section {
 }
 
 /* =========================
-   7. FOOTER
+   7. TARJETAS / SERVICIOS
+   ========================= */
+.grid-services {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+  padding: 40px 0;
+}
+
+.card,
+.info-card {
+  background: var(--white);
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: var(--shadow-soft);
+  transition: var(--transition);
+}
+
+.card {
+  text-align: center;
+  border: 1px solid #eee;
+}
+
+.card:hover,
+.info-card:hover {
+  transform: translateY(-6px);
+}
+
+.card-icon {
+  font-size: 2.5rem;
+  color: var(--primary);
+  margin-bottom: 15px;
+}
+
+.card h3,
+.info-card h3 {
+  color: var(--primary);
+  font-size: 1.4rem;
+  margin-bottom: 15px;
+}
+
+/* =========================
+   8. LISTAS DE CONTENIDO
+   ========================= */
+.subjects-list,
+.details-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.subjects-list li,
+.details-list li {
+  background: #f8f9fa;
+  padding: 14px 18px;
+  border-radius: 10px;
+  margin-bottom: 12px;
+  font-size: 15px;
+}
+
+/* =========================
+   9. LAYOUT SERVICIOS
+   ========================= */
+.service-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 40px;
+}
+
+.service-details .details-box {
+  background: var(--white);
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: var(--shadow-soft);
+}
+
+/* =========================
+   10. METODOLOGÍA
+   ========================= */
+.methodology,
+.method-summary {
+  text-align: center;
+}
+
+.method-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.m-card {
+  background: var(--white);
+  padding: 25px;
+  border-radius: 16px;
+  box-shadow: var(--shadow-soft);
+}
+
+.m-card i {
+  font-size: 2rem;
+  color: var(--primary);
+  margin-bottom: 12px;
+}
+
+/* =========================
+   11. REDES SOCIALES
+   ========================= */
+.social {
+  background: #f9f9f9;
+  border-radius: 20px;
+  padding: 50px 20px 60px;
+  text-align: center;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  margin-top: 15px;
+}
+
+.social-btn {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.6rem;
+  color: #fff;
+  text-decoration: none;
+  transition: var(--transition);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+}
+
+.social-btn.instagram {
+  background: linear-gradient(45deg,#f09433,#e6683c,#dc2743,#cc2366,#bc1888);
+}
+
+.social-btn.facebook {
+  background: #1877F2;
+}
+
+.social-btn:hover {
+  transform: translateY(-4px) scale(1.05);
+}
+
+/* =========================
+   12. FOOTER
    ========================= */
 .footer {
   background: var(--primary-dark);
@@ -163,7 +310,7 @@ main > section {
 }
 
 /* =========================
-   8. WHATSAPP FLOTANTE
+   13. WHATSAPP FLOTANTE
    ========================= */
 .whatsapp-float {
   position: fixed;
@@ -171,7 +318,7 @@ main > section {
   right: 25px;
   width: 60px;
   height: 60px;
-  background: #25D366;
+  background: var(--whatsapp);
   color: white;
   border-radius: 50%;
   display: flex;
@@ -191,7 +338,7 @@ main > section {
 }
 
 /* =========================
-   9. ACCESIBILIDAD
+   14. ACCESIBILIDAD
    ========================= */
 .sr-only {
   position: absolute;
@@ -205,7 +352,7 @@ main > section {
 }
 
 /* =========================
-   10. MEDIA QUERIES
+   15. RESPONSIVE
    ========================= */
 @media (max-width: 768px) {
 
@@ -222,7 +369,6 @@ main > section {
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.4s ease;
-    z-index: 1000;
   }
 
   .nav-list {
@@ -239,5 +385,10 @@ main > section {
   .hero-curvo {
     padding: 70px 20px 80px;
   }
+
+  .service-grid {
+    grid-template-columns: 1fr;
+  }
 }
+
 
