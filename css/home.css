@@ -1,5 +1,5 @@
 /* =========================================================
-   VARIABLES GLOBALES
+   VARIABLES (solo si no están en main.css)
    ========================================================= */
 :root {
   --primary: #1e3c72;
@@ -13,57 +13,7 @@
 }
 
 /* =========================================================
-   HERO SECTION
-   ========================================================= */
-.hero {
-  padding: 80px 20px;
-  text-align: center;
-  background: linear-gradient(135deg, var(--primary), var(--primary-light));
-  color: var(--white);
-  clip-path: ellipse(150% 100% at 50% 0%);
-}
-
-.hero h2 {
-  font-size: clamp(2rem, 5vw, 3rem);
-  margin-bottom: 15px;
-  line-height: 1.2;
-}
-
-.hero p {
-  font-size: 1.1rem;
-  margin-bottom: 30px;
-  opacity: 0.9;
-  max-width: 600px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-/* =========================================================
-   BOTÓN HERO (WhatsApp principal)
-   ========================================================= */
-.hero-btn {
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-  background: var(--whatsapp);
-  color: var(--white);
-  padding: 16px 32px;
-  border-radius: 50px;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 1.1rem;
-  transition: var(--transition);
-  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-}
-
-.hero-btn:hover {
-  background: var(--whatsapp-dark);
-  transform: translateY(-3px);
-  box-shadow: 0 6px 20px rgba(0,0,0,0.3);
-}
-
-/* =========================================================
-   TARJETAS DE SERVICIOS
+   TARJETAS DE SERVICIOS (HOME)
    ========================================================= */
 .grid-services {
   display: grid;
@@ -115,7 +65,6 @@
   color: var(--text-dark);
 }
 
-/* CONTENEDOR */
 .social-links {
   display: flex;
   justify-content: center;
@@ -123,7 +72,6 @@
   margin-top: 10px;
 }
 
-/* BOTONES CIRCULARES */
 .social-btn {
   width: 56px;
   height: 56px;
@@ -134,11 +82,10 @@
   font-size: 1.6rem;
   color: #ffffff;
   text-decoration: none;
-  transition: all 0.3s ease;
+  transition: var(--transition);
   box-shadow: 0 6px 15px rgba(0,0,0,0.15);
 }
 
-/* Instagram */
 .social-btn.instagram {
   background: linear-gradient(
     45deg,
@@ -150,32 +97,22 @@
   );
 }
 
-/* Facebook */
 .social-btn.facebook {
   background-color: #1877F2;
 }
 
-/* Hover elegante */
 .social-btn:hover {
   transform: translateY(-4px) scale(1.05);
   box-shadow: 0 10px 25px rgba(0,0,0,0.25);
 }
 
-/* Íconos */
 .social-btn i {
   font-size: 1.6rem;
 }
 
 /* =========================================================
-   UTILIDADES
+   ACCESIBILIDAD
    ========================================================= */
-.container {
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
-
-/* Accesibilidad */
 .sr-only {
   position: absolute;
   width: 1px;
@@ -186,6 +123,7 @@
   clip: rect(0, 0, 0, 0);
   border: 0;
 }
+
 
 
   
