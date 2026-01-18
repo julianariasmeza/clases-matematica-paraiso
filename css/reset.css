@@ -1,64 +1,41 @@
-/* ==================================================
-   RESET SUAVE + BASE TIPOGRÁFICA
-   ================================================== */
+/* =========================================================
+   RESET.CSS — NORMALIZACIÓN BÁSICA
+   ========================================================= */
 
-/* Box model consistente */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
-/* HTML base */
-html {
-  scroll-behavior: smooth;
-  -webkit-text-size-adjust: 100%;
-}
-
-/* BODY base */
-body {
+html, body {
   margin: 0;
-  font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-  line-height: 1.7;
-  color: #333;
-  -webkit-font-smoothing: antialiased;
-  background-color: #f5f7fb;
+  padding: 0;
 }
 
-/* Imágenes y multimedia */
-img,
-picture,
-video,
-canvas,
-svg {
+img, picture, video, canvas, svg {
   display: block;
   max-width: 100%;
 }
 
-/* Tipografía: mantener márgenes naturales */
-h1, h2, h3, h4, h5, h6 {
-  font-weight: 700;
-  line-height: 1.3;
-}
-
-/* Párrafos con respiración */
-p {
-  margin: 0 0 1em;
-}
-
-/* Listas: solo quitar estilos visuales */
-ul, ol {
-  padding-left: 1.2em;
-}
-
-/* Enlaces */
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-/* Formularios */
-button,
-input,
-select,
-textarea {
+input, button, textarea, select {
   font: inherit;
 }
+
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+ul, ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
