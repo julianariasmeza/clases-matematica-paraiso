@@ -416,3 +416,261 @@ main > section {
   }
 
 }
+/* =========================
+   16. BANNER PROMOCIONAL
+   ========================= */
+.promo-section {
+  margin: 60px 0;
+}
+
+.promo-banner {
+  background: var(--white);
+  border-radius: 20px;
+  box-shadow: var(--shadow-soft);
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 1fr 400px;
+  gap: 0;
+}
+
+/* Contenido principal */
+.promo-content {
+  padding: 50px;
+}
+
+.promo-header {
+  margin-bottom: 40px;
+}
+
+.promo-badge {
+  display: inline-block;
+  background: linear-gradient(135deg, var(--primary), var(--primary-light));
+  color: var(--white);
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.promo-title {
+  font-size: clamp(28px, 4vw, 36px);
+  color: var(--text-dark);
+  margin: 0 0 15px;
+  line-height: 1.2;
+}
+
+.promo-title .highlight {
+  color: var(--primary);
+  display: block;
+  font-weight: 700;
+}
+
+.promo-subtitle {
+  font-size: 1.1rem;
+  color: var(--text-muted);
+  margin: 0;
+}
+
+/* Grid de contenido */
+.promo-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+.promo-box h3 {
+  color: var(--primary);
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.promo-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.promo-list li {
+  padding: 10px 0;
+  border-bottom: 1px solid #f0f0f0;
+  color: var(--text-dark);
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.promo-list li:last-child {
+  border-bottom: none;
+}
+
+/* Barra lateral */
+.promo-sidebar {
+  background: linear-gradient(180deg, #f8f9fb 0%, #ffffff 100%);
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  border-left: 1px solid #eee;
+}
+
+.promo-image {
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.promo-image img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+}
+
+/* Pricing */
+.promo-pricing {
+  background: var(--white);
+  padding: 25px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+
+.price-info {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 12px;
+}
+
+.price-label {
+  font-size: 13px;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 5px;
+}
+
+.price-amount {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--primary);
+}
+
+.price-detail {
+  font-size: 14px;
+  color: var(--text-muted);
+  margin-bottom: 20px;
+  padding-top: 12px;
+  border-top: 1px solid #f0f0f0;
+}
+
+.btn-cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background: var(--whatsapp);
+  color: white;
+  padding: 14px 28px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 15px;
+  transition: var(--transition);
+  box-shadow: 0 4px 12px rgba(37, 211, 102, 0.3);
+  width: 100%;
+}
+
+.btn-cta:hover {
+  background: var(--whatsapp-dark);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(37, 211, 102, 0.4);
+}
+
+/* Horario */
+.promo-schedule {
+  background: var(--white);
+  padding: 20px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.schedule-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.schedule-icon {
+  font-size: 1.5rem;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f8f9fb;
+  border-radius: 8px;
+}
+
+.schedule-item strong {
+  display: block;
+  color: var(--text-dark);
+  font-size: 14px;
+}
+
+.schedule-item small {
+  display: block;
+  color: var(--text-muted);
+  font-size: 12px;
+}
+
+/* =========================
+   RESPONSIVE - BANNER
+   ========================= */
+@media (max-width: 968px) {
+  .promo-banner {
+    grid-template-columns: 1fr;
+  }
+
+  .promo-sidebar {
+    border-left: none;
+    border-top: 1px solid #eee;
+  }
+
+  .promo-content {
+    padding: 40px 30px;
+  }
+
+  .promo-grid {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  .promo-image img {
+    height: 250px;
+  }
+}
+
+@media (max-width: 580px) {
+  .promo-content {
+    padding: 30px 20px;
+  }
+
+  .promo-sidebar {
+    padding: 25px 20px;
+  }
+
+  .promo-title {
+    font-size: 24px;
+  }
+
+  .promo-subtitle {
+    font-size: 1rem;
+  }
+
+  .price-amount {
+    font-size: 1.75rem;
+  }
+}
