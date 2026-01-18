@@ -1,39 +1,64 @@
-/* Reset Universal */
+/* ==================================================
+   RESET SUAVE + BASE TIPOGRÁFICA
+   ================================================== */
+
+/* Box model consistente */
 *, *::before, *::after {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
 }
 
-/* Mejoras de renderizado y fluidez */
+/* HTML base */
 html {
-  scroll-behavior: smooth; /* Desplazamiento suave al hacer clic en enlaces */
-  -webkit-text-size-adjust: 100%; /* Evita cambios de fuente raros en iPhone */
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
 }
 
+/* BODY base */
 body {
-  line-height: 1.6; /* Mejora la lectura de tus descripciones */
-  -webkit-font-smoothing: antialiased; /* Fuentes más nítidas */
+  margin: 0;
   font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.7;
   color: #333;
+  -webkit-font-smoothing: antialiased;
+  background-color: #f5f7fb;
 }
 
-/* Elementos Multimedia */
-img, picture, video, canvas, svg {
+/* Imágenes y multimedia */
+img,
+picture,
+video,
+canvas,
+svg {
   display: block;
-  max-width: 100%; /* Evita que las imágenes se salgan de su contenedor */
+  max-width: 100%;
 }
 
-/* Tipografía y Enlaces */
-a {
-  text-decoration: none;
-  color: inherit;
+/* Tipografía: mantener márgenes naturales */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  line-height: 1.3;
 }
 
+/* Párrafos con respiración */
+p {
+  margin: 0 0 1em;
+}
+
+/* Listas: solo quitar estilos visuales */
 ul, ol {
-  list-style: none; /* Quita los puntos de las listas (útil para el menú) */
+  padding-left: 1.2em;
 }
 
-button, input, select, textarea {
-  font: inherit; /* Hereda la fuente del cuerpo */
+/* Enlaces */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Formularios */
+button,
+input,
+select,
+textarea {
+  font: inherit;
 }
