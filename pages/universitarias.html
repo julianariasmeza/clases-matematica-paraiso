@@ -18,35 +18,31 @@
 
 <body>
 
-<header class="header">
-  <div class="header-inner container">
-    <div class="brand">
-      <a href="../index.html" class="logo-link">
+ <!-- Header / Navegación -->
+  <header class="header">
+    <div class="header-inner container">
+      <div class="brand">
         <h1>Clases de Matemática Paraíso</h1>
-      </a>
-      <p><i class="fa-solid fa-location-dot"></i> Paraíso, Cartago</p>
+        <p>Paraíso, Cartago</p>
+      </div>
+
+      <input type="checkbox" id="menu-check" class="menu-check">
+      <label for="menu-check" class="menu-label" aria-label="Abrir menú">
+        <i class="fa-solid fa-bars"></i>
+      </label>
+
+      <nav class="nav">
+        <ul class="nav-list">
+          <li><a href="./" class="active">Inicio</a></li>
+          <li><a href="pages/admision.html">Admisión</a></li>
+          <li><a href="pages/universitarias.html">Universidad</a></li>
+          <li><a href="pages/fisica-quimica.html">Física y Química</a></li>
+        </ul>
+      </nav>
     </div>
+  </header>
 
-    <nav class="nav" aria-label="Menú secundario">
-      <ul>
-        <li><a href="../index.html">Inicio</a></li>
-        <li><a href="admision.html">Admisión</a></li>
-        <li><a href="universitarias.html" class="active">Universidad</a></li>
-        <li><a href="fisica-quimica.html">Física y Química</a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
-
-<nav class="breadcrumb container" aria-label="Ruta de navegación">
-  <ol>
-    <li><a href="../index.html">Inicio</a></li>
-    <li><span>›</span></li>
-    <li aria-current="page">Tutorías Universitarias</li>
-  </ol>
-</nav>
-
-<main class="container">
+  <main id="main-content">
 
   <section class="service-hero">
     <h2>Tutorías Universitarias</h2>
