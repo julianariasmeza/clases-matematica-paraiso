@@ -860,3 +860,31 @@ main > section {
     font-size: 14px;
   }
 }
+/* Imagen curso admisión colegios */
+.img-admision-colegios {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+
+  display: block;
+
+  border-radius: 12px;
+
+  object-fit: contain;
+}
+
+.promo-image {
+  overflow: hidden;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+
+  .img-admision-colegios {
+    max-height: 220px;
+    object-fit: cover;
+  }
+
+}
+
+
