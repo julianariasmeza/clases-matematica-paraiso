@@ -704,3 +704,42 @@ main > section {
     font-size: 1.75rem;
   }
 }
+/* ================= PROMO EXTRA ================= */
+
+.promo-extra {
+  background: #f8fafc;
+  border-radius: 14px;
+  padding: 1.5rem;
+  margin-top: 2rem;
+  border: 1px solid #e2e8f0;
+}
+
+.extra-title {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  color: #1e3c72;
+}
+
+.extra-list {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 1.5rem;
+}
+
+.extra-list li {
+  margin-bottom: 0.6rem;
+  font-size: 0.95rem;
+}
+
+.extra-subtitle {
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  color: #2c5282;
+}
+
+.extra-text {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #333;
+}
+
