@@ -46,34 +46,44 @@
   <!-- Font Awesome -->
   <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-
 </head>
 
 <body>
 
-  <!-- Header / Navegación -->
-  <header class="header">
-    <div class="header-inner container">
-      <div class="brand">
+<!-- ================= HEADER ================= -->
+<header class="header">
+  <div class="header-inner container">
+
+    <!-- Marca / Logo -->
+    <div class="brand">
+      <img src="../static/img/logo.png"
+           alt="Clases de Matemática Paraíso">
+
+      <div>
         <h1>Clases de Matemática Paraíso</h1>
         <p>Paraíso, Cartago</p>
       </div>
-
-      <input type="checkbox" id="menu-check" class="menu-check">
-      <label for="menu-check" class="menu-label" aria-label="Abrir menú">
-        <i class="fa-solid fa-bars"></i>
-      </label>
-
-      <nav class="nav">
-        <ul class="nav-list">
-          <li><a href="../index.html">Inicio</a></li>
-          <li><a href="admision.html">Admisión</a></li>
-          <li><a href="universitarias.html">Universidad</a></li>
-          <li><a href="fisica-quimica.html" class="active">Física y Química</a></li>
-        </ul>
-      </nav>
     </div>
-  </header>
+
+    <!-- Menú móvil -->
+    <input type="checkbox" id="menu-toggle" class="menu-check">
+
+    <label for="menu-toggle" class="menu-label" aria-label="Abrir menú">
+      <i class="fa-solid fa-bars"></i>
+    </label>
+
+    <!-- Navegación -->
+    <nav class="nav">
+      <ul class="nav-list">
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="admision.html">Admisión</a></li>
+        <li><a href="universitarias.html">Universidad</a></li>
+        <li><a href="fisica-quimica.html" class="active">Física y Química</a></li>
+      </ul>
+    </nav>
+
+  </div>
+</header>
 
   <main id="main-content">
 
