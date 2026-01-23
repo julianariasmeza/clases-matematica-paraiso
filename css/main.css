@@ -719,7 +719,7 @@ main > section {
 /* Header con gradiente */
 .extra-header {
   background: linear-gradient(135deg, var(--primary), var(--primary-light));
-  color: var(--white);
+  color: var(--black);
   padding: 30px 35px;
   display: flex;
   align-items: center;
