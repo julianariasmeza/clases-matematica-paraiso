@@ -51,6 +51,30 @@ main > section {
 /* =========================
    4. HEADER Y NAVEGACIÓN
    ========================= */
+
+/* =========================
+   BRAND / LOGO
+   ========================= */
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.brand img {
+  height: 48px;       /* Escritorio */
+  width: auto;
+  object-fit: contain;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+/* Hover elegante */
+.brand img:hover {
+  transform: scale(1.05);
+}
+
 .header {
   background: var(--primary);
   color: var(--white);
@@ -365,6 +389,11 @@ main > section {
     padding-bottom: 18px;
   }
 
+  /* ===== Logo ===== */
+  .brand img {
+    height: 36px;
+  }
+
   .brand h1 {
     font-size: 18px;
   }
@@ -416,6 +445,7 @@ main > section {
   }
 
 }
+
 /* =========================
    16. BANNER PROMOCIONAL
    ========================= */
